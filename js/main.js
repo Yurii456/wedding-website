@@ -627,7 +627,6 @@
     offcanvasMenu();
     burgerMenu();
     toggleYoungEventBlock();
-    toggleBusBlock();
     contentWayPoint();
     dropdown();
     lightbox();
