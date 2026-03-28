@@ -607,53 +607,6 @@
     }
   };
 
-  var toggleBusBlock = function () {
-    var busSection = qs("#fh5co-bus");
-    if (!busSection) return;
-
-    var options = qsa(".bus-option", busSection);
-    if (!options.length) return;
-
-    var params = new URLSearchParams(window.location.search);
-    var rawBus = (params.get("bus") || "").toLowerCase();
-    var bus = rawBus;
-
-    if (!bus) {
-      for (var pair of params.entries()) {
-        var value = (pair[1] || "").toLowerCase();
-        if (value) {
-          bus = value;
-          break;
-        }
-      }
-    }
-
-    var normalizeBus = function (value) {
-      if (!value) return "";
-      if (["shumsk", "шумськ", "shumskyi", "шумському"].includes(value)) {
-        return "shumsk";
-      }
-      if (["ternopil", "тернопіль", "ternopil"].includes(value)) {
-        return "ternopil";
-      }
-      return "";
-    };
-
-    var normalized = normalizeBus(bus);
-
-    if (!normalized) {
-      options.forEach(function (option) {
-        option.style.display = "";
-      });
-      return;
-    }
-
-    options.forEach(function (option) {
-      var type = (option.getAttribute("data-bus") || "").toLowerCase();
-      option.style.display = type === normalized ? "" : "none";
-    });
-  };
-
   var setInviteText = function () {
     var inviteEl = qs("#invite-text");
     if (!inviteEl) {
