@@ -1224,7 +1224,7 @@ form label {
 }
 #fh5co-invite .invite-image {
   /* width: 100%; */
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
   border-radius: 22px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
@@ -1256,13 +1256,14 @@ form label {
   color: rgba(0, 0, 0, 0.5);
 }
 #fh5co-invite .fh5co-heading h2 {
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.5;
   font-weight: 500;
   max-width: 720px;
   margin: 0;
   color: #646464;
   font-family: Manrope, serif;
+  white-space: pre-line;
 }
 
 @media screen and (max-width: 768px) {
