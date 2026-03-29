@@ -132,9 +132,7 @@ P.S. Шкода, що Мішка не може привести своєї пю�
 We would love to invite you to our wedding 🥂
 
 Ilona, you came into my life as an English teacher, but became someone so much more - a very close person to me. You have such a warm, cozy energy, and being around you always feels easy and special. I’m truly grateful for our connection.
-
 Serhii, we’re really happy that you’re part of Ilona’s life, and it would mean a lot to us to celebrate this special day together with both of you.
-
 We would be so glad to have you by our side on this important day ❤️
 
 With love,  
@@ -143,11 +141,8 @@ Yura & Yulia♥️
 Сергій, я думаю тобі Ілона перекладе, а якщо ні, то от текст для тебе:
 
 Дорогі Ілона, Сергій і Кокосик!🥥
-
 Запрошуємо вас на наше весілля 🥂
-
 Ілона, ти прийшла в моє життя як викладачка англійської, але стала значно більшою - дуже близькою людиною. З тобою завжди тепло, затишно і легко. Я щиро ціную наш зв’язок.
-
 Сергію, нам дуже приємно, що ти поруч з Ілоною, і будемо раді розділити цей особливий день разом із вами.
 
 Будемо дуже раді бачити вас поруч у цей важливий для нас день 🥹
