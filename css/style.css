@@ -1790,23 +1790,26 @@ form label {
 #fh5co-offcanvas {
   position: fixed;
   z-index: 1901;
-  width: 270px;
-  background: black;
-  font-size: 14px;
-  font-weight: bold;
+  width: 78vw;
+  max-width: 320px;
+  background: linear-gradient(180deg, #0b0b0b 0%, #050505 100%);
+  box-shadow: -18px 0 40px rgba(0, 0, 0, 0.45);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   font-family: Sofia Sans Condensed; 
   top: 0;
   right: 0;
   top: 0;
   bottom: 0;
   height: 100vh;
-  padding: 45px 40px 40px 40px;
+  padding: 84px 28px 32px 28px;
   overflow-y: auto;
-  -moz-transform: translateX(270px);
-  -webkit-transform: translateX(270px);
-  -ms-transform: translateX(270px);
-  -o-transform: translateX(270px);
-  transform: translateX(270px);
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1819,10 +1822,10 @@ form label {
   transform: translateX(0px);
 }
 #fh5co-offcanvas a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.86);
 }
 #fh5co-offcanvas a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 1);
 }
 #fh5co-offcanvas ul {
   padding: 0;
@@ -1832,6 +1835,15 @@ form label {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+#fh5co-offcanvas ul li a {
+  display: block;
+  padding: 10px 0;
+  line-height: 1.2;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+#fh5co-offcanvas ul li:last-child a {
+  border-bottom: 0;
 }
 #fh5co-offcanvas ul li > ul {
   padding-left: 20px;
