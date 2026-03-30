@@ -1,6 +1,13 @@
 (function () {
   "use strict";
 
+  if (window.console && typeof console.log === "function") {
+    console.log(
+      "%cЯ ПОНЯВ ЩО ТИ ДУЖЕ РОЗУМНИЙ АЙТІШНИК, АЛЕ ДАВАЙ ЗАКРИВАЙ КОНСОЛЬ)",
+      "font-size: 22px; font-weight: 900; color: #ff4d4f; background: #111; padding: 8px 12px; border-radius: 6px;"
+    );
+  }
+
   var doc = document;
   var body = doc.body;
   var helpers = window.WeddingHelpers || {};
