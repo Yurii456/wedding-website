@@ -1327,22 +1327,16 @@ form label {
 
 #fh5co-gifts .gifts-panel {
   position: relative;
-  background: #fff;
+  background:
+    linear-gradient(180deg, #d9c7b6 0%, #c8b4a3 100%) left top/8px 100% no-repeat,
+    #fff;
   padding: 32px 32px 32px 44px;
-  border-radius: 24px;
+  border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
-#fh5co-gifts .gifts-panel::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 8px;
-  border-radius: 24px 0 0 24px;
-  background: linear-gradient(180deg, #d9c7b6 0%, #c8b4a3 100%);
-}
+
 #fh5co-gifts .gifts-panel__item + .gifts-panel__item {
   margin-top: 18px;
   padding-top: 18px;
@@ -1373,10 +1367,8 @@ form label {
 
 @media screen and (max-width: 768px) {
   #fh5co-gifts .gifts-panel {
+    background-size: 6px 100%;
     padding: 24px 22px 24px 30px;
-  }
-  #fh5co-gifts .gifts-panel::before {
-    width: 6px;
   }
   #fh5co-gifts .gifts-panel__item p {
     font-size: 16px;
