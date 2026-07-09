@@ -1354,32 +1354,76 @@ form label {
   color: rgba(0, 0, 0, 0.7);
   margin-bottom: 0;
 }
-#fh5co-gifts .gifts-qr-note {
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.04);
-  color: rgba(0, 0, 0, 0.65);
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  margin-top: 14px;
+#fh5co-gifts .gifts-panel__item p strong {
+  color: #3d3d3d;
+  font-weight: 700;
 }
-#fh5co-gifts .gifts-qr {
-  width: 100%;
-  max-width: 320px;
-  margin: 18px auto 0;
+#fh5co-gifts .gifts-report {
+  max-width: 820px;
+  margin: 24px auto 0;
 }
-#fh5co-gifts .gifts-qr a {
+#fh5co-gifts .gifts-report__proofs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+#fh5co-gifts .gifts-report__proof {
   display: block;
-  border-radius: 12px;
+  padding: 18px 18px 14px;
+  border: 1px solid rgba(130, 111, 94, 0.18);
+  border-radius: 8px;
+  background: #f8f3ef;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  color: #3d3d3d;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#fh5co-gifts .gifts-report__proof:hover,
+#fh5co-gifts .gifts-report__proof:focus {
+  color: #3d3d3d;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.12);
+}
+#fh5co-gifts .gifts-report__image {
+  display: block;
+  position: relative;
+  width: min(100%, 245px);
+  aspect-ratio: 591 / 1280;
+  margin: 0 auto;
+  padding: 7px;
+  border: 2px solid rgba(55, 50, 47, 0.82);
+  border-radius: 26px;
+  background: #222;
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.16);
   overflow: hidden;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
-  background: #7f4b92;
 }
-#fh5co-gifts .gifts-qr img {
+#fh5co-gifts .gifts-report__image::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 50%;
+  z-index: 1;
+  width: 46px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+  transform: translateX(-50%);
+}
+#fh5co-gifts .gifts-report__image img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+}
+#fh5co-gifts .gifts-report__caption {
+  display: block;
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.68);
 }
 
 @media screen and (max-width: 768px) {
@@ -1390,8 +1434,23 @@ form label {
   #fh5co-gifts .gifts-panel__item p {
     font-size: 16px;
   }
-  #fh5co-gifts .gifts-qr-note {
-    margin: 14px auto 0;
+  #fh5co-gifts .gifts-report__proofs {
+    gap: 14px;
+  }
+  #fh5co-gifts .gifts-report__proof {
+    padding: 14px 12px 12px;
+  }
+  #fh5co-gifts .gifts-report__image {
+    width: min(100%, 210px);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #fh5co-gifts .gifts-report__proofs {
+    grid-template-columns: 1fr;
+  }
+  #fh5co-gifts .gifts-report__image {
+    width: min(100%, 230px);
   }
 }
 
