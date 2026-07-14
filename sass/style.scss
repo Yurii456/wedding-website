@@ -909,6 +909,21 @@ form {
 		}
 	}
 }
+
+#fh5co-header .display-tc .invite-highlight + p {
+	margin: 30px 0 0;
+	@media screen and (max-width: $screen-sm) {
+		margin-top: 22px;
+	}
+}
+
+#fh5co-header .display-tc .btn {
+	padding: 14px 22px;
+	@media screen and (max-width: $screen-sm) {
+		padding: 12px 18px;
+	}
+}
+
 #fh5co-counter {	
 	text-align: center;
 	.counter {
